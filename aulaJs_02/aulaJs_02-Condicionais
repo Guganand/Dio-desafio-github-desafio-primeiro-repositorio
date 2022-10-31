@@ -1,18 +1,55 @@
 
 /* Tipo de condicão booleano, que retorna verdadeiro ou falso
+
 const numero = 2;
 const numeroPar = (numero % 2) === 0;
 
 console.log(numeroPar);
 */
 
+
+/* verificando se o número é par ou impar com a estrutura se/if, senão/else 
+
 const numero = 2;
 const numeroPar = (numero % 2) === 0;
 
-console.log(numeroPar);
-
-if (numeroPar) {
-    console.log('executei');
+if (numeroPar)
+{
+    console.log('par');
+} 
+else if(!numeroPar)
+{
+    console.log('impar');
 }
+*/
 
-//tempo do video 13:38
+/* Número pode ser dividido por 5
+
+const numero = 15;
+const numeroDivisivelPor5 = (numero % 5) === 0;
+
+if (numeroDivisivelPor5)
+{
+    console.log('sim');
+} 
+else 
+{
+    console.log('não');
+}
+*/
+
+const numero = 0;
+const numeroDivisivelPor5 = (numero % 5) === 0;
+
+if(numero === 0)
+{
+    console.log('O número é inválido')
+}
+else if (numeroDivisivelPor5)
+{
+    console.log('sim');
+} 
+else 
+{
+    console.log('não');
+}
