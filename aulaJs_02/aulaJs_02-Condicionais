@@ -1,4 +1,18 @@
+
+/* Tipo de condicão booleano, que retorna verdadeiro ou falso
 const numero = 2;
 const numeroPar = (numero % 2) === 0;
 
 console.log(numeroPar);
+*/
+
+const numero = 2;
+const numeroPar = (numero % 2) === 0;
+
+console.log(numeroPar);
+
+if (numeroPar) {
+    console.log('executei');
+}
+
+//tempo do video 13:38
