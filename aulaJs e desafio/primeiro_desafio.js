@@ -1,4 +1,4 @@
-/* Faça um programa para caular o valor de uma viagem.
+/* Faça um programa para calcular o valor de uma viagem.
 
 voçe terá 3 variaveis. Sendo elas:
 1- preço do combustivel;
@@ -13,4 +13,4 @@ let distEmKM =1580;
 
 let valorViagem = distEmKM / gastoPorKM * precoCombustivel;
 
-console.log(valorViagem.toFixed(2));
+console.log(valorViagem.toFixed(2)); // toFixed(2)=> arredonda um valor quebrado 
