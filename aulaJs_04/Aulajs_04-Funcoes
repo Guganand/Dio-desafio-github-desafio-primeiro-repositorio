@@ -1,0 +1,86 @@
+/*
+
+//Estrutura de uma função.
+function teste(){
+    console.log(`teste`);
+}
+
+//Invocar uma função.
+teste()
+
+//Função sayMyName que recebe um parametro => exemplo asyMyName(name).
+// Esse tipo de função é conhecida como  procedimento, ela execulta o codigo e não retorna nada. 
+function sayMyName(name){
+    console.log(`Your name is:` + name);
+}
+
+//Invocando a função sayMyName e passando uma string para o parametro (name).
+sayMyName(` Renan `);
+sayMyName(` Vitor `);
+
+
+//Função que retorna um valor, e é armazenado em uma variável ou constante.
+function quadrado(valor){
+    return valor * valor
+}
+
+//Neste exemplo o retorno é armazenado na constante.
+const quadradoDeDez = quadrado(10);
+console.log(quadradoDeDez);
+//Neste exemplo o retorno é imprimido direto no console.
+console.log(quadrado(10) + quadrado(10));
+
+
+//Função que recebe mais de um parametro.
+function incrementarJuros(valor, percentualJuros){
+    const valorDeacrecimo = (percentualJuros / 100) * valor;
+    return valor + valorDeacrecimo;
+}
+
+console.log(incrementarJuros(100, 10));
+console.log(incrementarJuros(100, 15));
+console.log(incrementarJuros(100, 20));
+*/
+
+//Refatoração do codigo da aulaJs_03-Exercicios_02
+
+function calcularImc(peso, altura) {
+    return peso / (altura * altura);
+
+}
+
+function classificarImc(imc) {
+    if (imc < 18.5) {
+        return ('Abaixo do peso');
+    } else if (imc >= 18.5 && imc < 25) {
+        return ('Peso normal');
+    } else if (imc >= 25 && imc < 30) {
+        return ('Acima do peso');
+    } else if (imc >= 30 && imc < 40) {
+        return ('Obeso');
+    } else {
+        return ('Obesidade Grave');
+    }
+
+}
+
+
+//função main, codigo principal 
+function main() {
+    let peso = 150;
+    let altura = 1.75;
+
+    let imc = calcularImc(peso, altura);
+    console.log(classificarImc(imc));
+}
+//invocando a função main();
+main();
+
+//Função não nomeada, ela execulta sozinho sem precisar invocar uma unica vez. 
+(function () {
+    let peso = 75;
+    let altura = 1.75;
+
+    let imc = calcularImc(peso, altura);
+    console.log(classificarImc(imc));
+})();
