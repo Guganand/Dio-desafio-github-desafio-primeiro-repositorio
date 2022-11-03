@@ -76,7 +76,7 @@ function main() {
 //invocando a função main();
 main();
 
-//Função não nomeada, ela execulta sozinho sem precisar invocar uma unica vez. 
+//Função não nomeada, ela execulta sozinho uma unica vez sem precisar invocar . 
 (function () {
     let peso = 75;
     let altura = 1.75;
