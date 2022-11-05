@@ -48,6 +48,6 @@ if (formaDePagamento === 1) {
     console.log(precoEtiqueta + (precoEtiqueta * 0.1));
 }
 
-#contratoDeCompromisso
-
 */
+
+// #contratoDeCompromisso

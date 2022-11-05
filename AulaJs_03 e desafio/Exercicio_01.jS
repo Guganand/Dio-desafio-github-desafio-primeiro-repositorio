@@ -42,6 +42,7 @@ if (media < 5) {
     console.log('Passou de semestre');
 }
  
-#ContratoDeCompromisso
-
 */
+
+// # ContratoDeCompromisso
+

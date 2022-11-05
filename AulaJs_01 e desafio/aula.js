@@ -7,3 +7,5 @@ variavel = 20;
 
 
 console.log(variavel);
+
+// #contratoDeCompromisso

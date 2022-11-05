@@ -14,3 +14,5 @@ let distEmKM =1580;
 let valorViagem = distEmKM / gastoPorKM * precoCombustivel;
 
 console.log(valorViagem.toFixed(2)); // toFixed(2)=> arredonda um valor quebrado 
+
+// #contratoDeCompromisso

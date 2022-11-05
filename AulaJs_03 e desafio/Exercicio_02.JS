@@ -55,6 +55,6 @@ if(imc < 18.5){
     console.log('Obesidade Grave');
 }
 
-#ContratoDeCompromisso
-
 */
+
+// #ContratoDeCompromisso
