@@ -1,0 +1,50 @@
+/*
+function escreverMeuNome(nome){
+    return(` Meu nome é ` + nome);
+}
+
+
+function maiorIdade(idade) {
+    if (idade < 18) {
+        console.log(escreverMeuNome(`fernando`) + ` Voçe è menor de idade ` + idade);
+    } else {
+        console.log(`Voçe é maior de idade ` + idade);
+    }
+}
+
+
+maiorIdade(18);
+*/
+
+//Reatoração do exercicio da aulaJs_03-Exercicio_03
+let valor = 100;
+let tipoPagamento = 2;
+
+
+function aplicarDesconto(valor, desconto) {
+    return (valor - (valor * (desconto / 100)));
+}
+
+function aplicarJuros(valor, juros) {
+    return (valor + (valor * (juros / 100)));
+}
+
+function verificaDesconto(tipoPagamento) {
+    if (tipoPagamento === 1) {
+        let valorEtiqueta = valor;
+        console.log(`R$ ${valorEtiqueta.toFixed(2)} Preço normal de etiqueta sem juros`);
+    } else if (tipoPagamento === 2) {
+        let valorEtiqueta = aplicarDesconto(valor, 10);
+        console.log(`R$ ${valorEtiqueta.toFixed(2)} Recebe 10% de desconto`);
+    } else if (tipoPagamento === 3) {
+        let valorEtiqueta = aplicarDesconto(valor, 15);
+        console.log(`R$ ${valorEtiqueta.toFixed(2)} Recebe 15% de desconto`);
+    } else {
+        let valorEtiqueta = aplicarJuros(valor, 10) ;
+        console.log(`R$ ${valorEtiqueta.toFixed(2)} preço normal de etiqueta, mais juros de 10%`);
+    }
+}
+      
+verificaDesconto();
+
+// #contratoDeCompromisso
