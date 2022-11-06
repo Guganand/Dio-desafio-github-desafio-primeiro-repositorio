@@ -1,0 +1,76 @@
+/*
+// constante não muda seu valor. 
+const aluno = 'joao';
+
+// variavel pode mudar seu valor.
+let aluno1 = 'joao';
+
+// objeto literal não é preciso criar uma class
+const aluno2 = {nome: 'joao', idade: 25}; 
+
+//arrays(lista) pode começar vazia.
+// arrays(lista) na posição[0] está 'joao',posição[1] está 'vitor', assim sucessivamente.
+const alunos = ['joao', 'marcelo', 'mario', 'vitor'];
+
+//adicionando um item na lista existente = forma dinamica
+alunos.push('thiago');
+// adicionando ou substituindo um item de uma posição na lista existente. 
+// se for substituir, o item gravado antes será perdido. no caso 'thiago' que foi add no codigo acima
+alunos[4] = 'jorge';
+
+//remove o ultimo da lista.
+alunos.pop();
+//remove o primeiro da lista.
+alunos.shift();
+
+//apaga um item da posição e o espaço fica vazio. exemplo = [ 'marcelo', 'mario', <1 empty item> ].
+delete alunos[2]
+//length percorre a lista/ te dá a quantidade de posições / tamanho da lista. 
+alunos.length;
+
+console.log(alunos.length);
+console.log(alunos);
+
+const notas = [];
+
+notas.push(5);
+notas.push(7);
+notas.push(8);
+notas.push(2);
+notas.push(5);
+notas.push(8);
+
+const soma = notas[0] + notas[1] + notas[2] + notas[3] + notas[4];
+
+console.log( soma / 5); // posso ultilizar no lugar do 5 , notas.length.
+
+
+const nome = 'fernando da silva'
+//percorrendo uma string com for/faça em quanto.
+for (let i = 0; i < nome.length; i++) {
+    const letra = nome[i];
+    console.log(letra);
+    
+}
+*/
+
+// calculando a média com o for.
+const notas = [];
+
+notas.push(5);
+notas.push(7);
+notas.push(8);
+notas.push(2);
+notas.push(5);
+notas.push(8);
+
+let soma = 0;
+for (let i = 0; i < notas.length; i++) {
+    const nota = notas[i];
+    soma = soma + nota;
+}
+
+const media = soma / notas.length;
+console.log(media);
+
+// #ContratoDeCompromisso

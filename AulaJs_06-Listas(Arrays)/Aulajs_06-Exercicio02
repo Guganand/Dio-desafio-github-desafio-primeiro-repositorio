@@ -1,0 +1,13 @@
+// 02) Crie um programa que seja capaz de percorrer uma lista de numeros e imprima cada numero par encontrado.
+
+const numeros = [21, 22, 23, 24, 25, 26, 27, 28, 29, 30];
+
+for (let i = 0; i < numeros.length; i++) {
+    let numero = numeros[i];
+    if (numero % 2 === 0) {
+        console.log(numero);
+    }
+
+}
+
+// #ContratoDeCompromisso
