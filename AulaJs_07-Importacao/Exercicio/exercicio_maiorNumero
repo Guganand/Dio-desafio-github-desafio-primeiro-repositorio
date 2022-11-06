@@ -1,0 +1,17 @@
+
+const entradas = [5, 50, 10, 98, 23];
+let i = 0;
+
+function gets() {
+    let valor = entradas[i];
+    i++;  //ou  i = i + 1; que é igual tem a mesma função. (obs) toda vez que chamar o gets o valor passa para o proximo da lista.
+	return valor;
+
+}
+
+function print(texto) {
+	console.log(texto);
+}
+
+
+module.exports = { gets, print };

@@ -1,0 +1,16 @@
+//codigo para exportação
+
+function gets() {
+	return '#ContratoDeCompromisso';
+	//return 10;
+
+}
+
+function print(texto) {
+	console.log(texto);
+}
+
+
+
+//definindo o que eu quero exportar.
+module.exports = { gets, print };
