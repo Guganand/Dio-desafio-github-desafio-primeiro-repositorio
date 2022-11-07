@@ -10,7 +10,10 @@ Dados de entrada:
 saida: 98;
 */
 
+//////////////////////////////////////////////////
 
+/*
+//(OBS) Pra mim => So pra entender como funciona
 const { gets, print } = require('./exercicio_maiorNumero');
 
 let numeroSorteados = [];
@@ -32,3 +35,18 @@ for (let i = 0; i < numeroSorteados.length; i++) {
 
 }
 print(maiorNumero); 
+*/
+const { gets, print } = require('./exercicio_maiorNumero');
+
+let maiorNumero = 0;
+
+for (let i = 0; i < 5; i++) {
+    const numeroPorLoop = gets();
+    if(numeroPorLoop > maiorNumero){
+        maiorNumero = numeroPorLoop;
+    }
+
+}
+
+
+print(maiorNumero);
